@@ -1,0 +1,32 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Soccer Schedule",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "npm run server & webpack -wd",
+    "server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "react-soccer"
+  },
+  "keywords": [
+    "fpc",
+    "soccer",
+    "schedule"
+  ],
+  "author": "Ben Bridges",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.2"
+  },
+  "devDependencies": {
+    "babel-core": "^5.1.11",
+    "babel-loader": "^5.0.0",
+    "connect": "^3.3.5",
+    "serve-static": "^1.9.2",
+    "webpack": "^1.8.9"
+  }
+}
