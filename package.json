@@ -20,8 +20,7 @@
   "author": "Ben Bridges",
   "license": "ISC",
   "dependencies": {
-    "react": "^0.13.2",
-    "bootstrap": "^3.3.4"
+    "react": "^0.13.2"
   },
   "devDependencies": {
     "babel-core": "^5.1.11",
