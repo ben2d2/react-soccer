@@ -1,4 +1,4 @@
-module.exports = [
+[
     {
         "level": "0",
         "date": "3",
@@ -1255,4 +1255,4 @@ module.exports = [
         "away": "53",
         "home": "54"
     }
-];
+]

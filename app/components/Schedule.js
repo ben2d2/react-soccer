@@ -3,16 +3,28 @@ var levels  = require('./levelsList');
 var dates   = require('./datesList');
 var fields  = require('./fieldsList');
 var times   = require('./timesList');
-var games   = require('./gamesList');
 
 var LevelsList = require('./Levels');
 
 var Schedule = React.createClass({
+  loadScheduleFromServer: function() {
+    $.ajax({
+      url: this.props.url,
+      dataType: 'json',
+      success: function(data) {
+        this.setState({data: groupedData(data)});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
   getInitialState: function() {
     return {data: []};
   },
   componentDidMount: function() {
-    this.setState({data: groupedData(games)})
+    this.loadScheduleFromServer();
+    setInterval(this.loadScheduleFromServer, this.props.pollInterval);
   },
   render: function() {
     return (

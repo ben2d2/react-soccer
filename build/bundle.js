@@ -71,7 +71,7 @@
 	  displayName: 'App',
 	
 	  render: function render() {
-	    return React.createElement(Schedule, null);
+	    return React.createElement(Schedule, { url: 'games.json', pollInterval: 200000 });
 	  }
 	
 	});
@@ -103,18 +103,30 @@
 	var dates = __webpack_require__(/*! ./datesList */ 6);
 	var fields = __webpack_require__(/*! ./fieldsList */ 7);
 	var times = __webpack_require__(/*! ./timesList */ 8);
-	var games = __webpack_require__(/*! ./gamesList */ 9);
 	
 	var LevelsList = __webpack_require__(/*! ./Levels */ 10);
 	
 	var Schedule = React.createClass({
 	  displayName: 'Schedule',
 	
+	  loadScheduleFromServer: function loadScheduleFromServer() {
+	    $.ajax({
+	      url: this.props.url,
+	      dataType: 'json',
+	      success: (function (data) {
+	        this.setState({ data: groupedData(data) });
+	      }).bind(this),
+	      error: (function (xhr, status, err) {
+	        console.error(this.props.url, status, err.toString());
+	      }).bind(this)
+	    });
+	  },
 	  getInitialState: function getInitialState() {
 	    return { data: [] };
 	  },
 	  componentDidMount: function componentDidMount() {
-	    this.setState({ data: groupedData(games) });
+	    this.loadScheduleFromServer();
+	    setInterval(this.loadScheduleFromServer, this.props.pollInterval);
 	  },
 	  render: function render() {
 	    return React.createElement(
