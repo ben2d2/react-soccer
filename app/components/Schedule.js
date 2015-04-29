@@ -29,7 +29,7 @@ var Schedule = React.createClass({
   render: function() {
     return (
       <div className="games">
-        <LevelsList data={this.state.data} />
+        <LevelsList levels={this.state.data} />
       </div>
     );
   }

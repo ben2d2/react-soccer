@@ -8,8 +8,8 @@ var Fields = React.createClass({
   render: function() {
     return (
       <div className="fieldRow">
-        Field #{fields.indexOf(this.props.data.field, 0) + 1} <span className="field-description">{this.props.data.field}</span>
-        <GamesList data={this.props.data.games} />
+        Field #{fields.indexOf(this.props.field.field, 0) + 1} <span className="field-description">{this.props.field.field}</span>
+        <GamesList games={this.props.field.games} />
       </div>
     );
   }
@@ -17,9 +17,9 @@ var Fields = React.createClass({
 
 var FieldsList = React.createClass({
   render: function() {
-    var fieldNodes = this.props.data.map(function(field, index) {
+    var fieldNodes = this.props.fields.map(function(field, index) {
       return (
-        <Fields data={field} key={index}/>
+        <Fields field={field} key={index}/>
       );
     });
     return (

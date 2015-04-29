@@ -6,7 +6,7 @@ var Levels = React.createClass({
   render: function() {
     return (
       <div className="levelRow">
-        <DatesList data={this.props.data.dates} />
+        <DatesList dates={this.props.level.dates} />
       </div>
     );
   }
@@ -14,11 +14,11 @@ var Levels = React.createClass({
 
 var LevelsList = React.createClass({
   render: function() {
-    var levelNodes = this.props.data.map(function(level, index) {
+    var levelNodes = this.props.levels.map(function(level, index) {
       var klass = level.level == "threefour" ? "tab-pane active" : "tab-pane";
       return (
         <div id={level.level} role="tabpanel" className={klass}>
-          <Levels data={level} key={index}/>
+          <Levels level={level} key={index}/>
         </div>
       );
     });

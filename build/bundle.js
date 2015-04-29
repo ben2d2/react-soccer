@@ -132,7 +132,7 @@
 	    return React.createElement(
 	      'div',
 	      { className: 'games' },
-	      React.createElement(LevelsList, { data: this.state.data })
+	      React.createElement(LevelsList, { levels: this.state.data })
 	    );
 	  }
 	});
@@ -395,7 +395,7 @@
 	    return React.createElement(
 	      'div',
 	      { className: 'levelRow' },
-	      React.createElement(DatesList, { data: this.props.data.dates })
+	      React.createElement(DatesList, { dates: this.props.level.dates })
 	    );
 	  }
 	});
@@ -404,12 +404,12 @@
 	  displayName: 'LevelsList',
 	
 	  render: function render() {
-	    var levelNodes = this.props.data.map(function (level, index) {
+	    var levelNodes = this.props.levels.map(function (level, index) {
 	      var klass = level.level == 'threefour' ? 'tab-pane active' : 'tab-pane';
 	      return React.createElement(
 	        'div',
 	        { id: level.level, role: 'tabpanel', className: klass },
-	        React.createElement(Levels, { data: level, key: index })
+	        React.createElement(Levels, { level: level, key: index })
 	      );
 	    });
 	    return React.createElement(
@@ -4904,9 +4904,9 @@
 	      React.createElement(
 	        'strong',
 	        null,
-	        this.props.data.date
+	        this.props.date.date
 	      ),
-	      React.createElement(FieldsList, { data: this.props.data.fields })
+	      React.createElement(FieldsList, { fields: this.props.date.fields })
 	    );
 	  }
 	});
@@ -4915,8 +4915,8 @@
 	  displayName: 'DatesList',
 	
 	  render: function render() {
-	    var dateNodes = this.props.data.map(function (date, index) {
-	      return React.createElement(Dates, { data: date, key: index });
+	    var dateNodes = this.props.dates.map(function (date, index) {
+	      return React.createElement(Dates, { date: date, key: index });
 	    });
 	    return React.createElement(
 	      'div',
@@ -12474,14 +12474,14 @@
 	      'div',
 	      { className: 'fieldRow' },
 	      'Field #',
-	      fields.indexOf(this.props.data.field, 0) + 1,
+	      fields.indexOf(this.props.field.field, 0) + 1,
 	      ' ',
 	      React.createElement(
 	        'span',
 	        { className: 'field-description' },
-	        this.props.data.field
+	        this.props.field.field
 	      ),
-	      React.createElement(GamesList, { data: this.props.data.games })
+	      React.createElement(GamesList, { games: this.props.field.games })
 	    );
 	  }
 	});
@@ -12490,8 +12490,8 @@
 	  displayName: 'FieldsList',
 	
 	  render: function render() {
-	    var fieldNodes = this.props.data.map(function (field, index) {
-	      return React.createElement(Fields, { data: field, key: index });
+	    var fieldNodes = this.props.fields.map(function (field, index) {
+	      return React.createElement(Fields, { field: field, key: index });
 	    });
 	    return React.createElement(
 	      'div',
@@ -17166,15 +17166,15 @@
 	  displayName: 'Games',
 	
 	  render: function render() {
-	    var awayTeam = findById(teams, this.props.data.away);
-	    var homeTeam = findById(teams, this.props.data.home);
+	    var awayTeam = findById(teams, this.props.game.away);
+	    var homeTeam = findById(teams, this.props.game.home);
 	    return React.createElement(
 	      'div',
 	      { className: 'gameRow row' },
 	      React.createElement(
 	        'div',
 	        { className: 'col-lg-2 time' },
-	        times[this.props.data.start_at]
+	        times[this.props.game.start_at]
 	      ),
 	      React.createElement(
 	        'div',
@@ -17196,8 +17196,8 @@
 	  displayName: 'GamesList',
 	
 	  render: function render() {
-	    var gameNodes = this.props.data.map(function (game, index) {
-	      return React.createElement(Games, { data: game, key: index });
+	    var gameNodes = this.props.games.map(function (game, index) {
+	      return React.createElement(Games, { game: game, key: index });
 	    });
 	    return React.createElement(
 	      'div',

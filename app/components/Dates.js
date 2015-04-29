@@ -6,8 +6,8 @@ var Dates = React.createClass({
   render: function() {
     return (
       <div className="dateRow">
-        <strong>{this.props.data.date}</strong>
-        <FieldsList data={this.props.data.fields} />
+        <strong>{this.props.date.date}</strong>
+        <FieldsList fields={this.props.date.fields} />
       </div>
     );
   }
@@ -15,9 +15,9 @@ var Dates = React.createClass({
 
 var DatesList = React.createClass({
   render: function() {
-    var dateNodes = this.props.data.map(function(date, index) {
+    var dateNodes = this.props.dates.map(function(date, index) {
       return (
-        <Dates data={date} key={index}/>
+        <Dates date={date} key={index}/>
       );
     });
     return (
