@@ -6,7 +6,7 @@ var App = React.createClass({
 
   render: function() {
     return (
-      <Schedule url='games.json' pollInterval={200000}/>
+      <Schedule url='games.json' pollInterval={2000}/>
     );
   }
 
