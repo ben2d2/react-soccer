@@ -20,6 +20,7 @@
   "author": "Ben Bridges",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^3.7.0",
     "react": "^0.13.2"
   },
   "devDependencies": {
