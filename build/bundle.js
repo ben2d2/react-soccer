@@ -12380,8 +12380,6 @@
 	
 	var GamesList = __webpack_require__(/*! ./Games */ 141);
 	
-	var fields = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./fieldsList\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	
 	var Fields = React.createClass({
 	  displayName: 'Fields',
 	
@@ -12389,9 +12387,7 @@
 	    return React.createElement(
 	      'div',
 	      { className: 'fieldRow' },
-	      'Field #',
-	      fields.indexOf(this.props.field.field, 0) + 1,
-	      ' ',
+	      'Field ',
 	      React.createElement(
 	        'span',
 	        { className: 'field-description' },
