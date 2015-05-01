@@ -4,8 +4,8 @@ var teams   = require('./teams');
 
 var Games = React.createClass({
   render: function() {
-    var awayTeam = findById(teams,this.props.game.away);
-    var homeTeam = findById(teams,this.props.game.home);
+    var awayTeam = _.findWhere(teams, {id: this.props.game.away});
+    var homeTeam = _.findWhere(teams, {id: this.props.game.home});
     return (
       <div className="gameRow row">
         <div className="col-lg-2 time">{this.props.game.start_at}</div>
@@ -30,14 +30,5 @@ var GamesList = React.createClass({
     );
   }
 });
-
-function findById(source, id) {
-  for (var i = 0; i < source.length; i++) {
-    if (source[i].id === id) {
-      return source[i];
-    }
-  }
-  throw "Couldn't find object with id: " + id;
-}
 
 module.exports = GamesList;
