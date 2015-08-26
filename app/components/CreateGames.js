@@ -1,4 +1,7 @@
-module.exports = [
+var React = require('react');
+var _     = require('lodash');
+
+var Teams = [
   {"id": "11", "group": 1, "name": "Craig","color": "teal"},
   {"id": "12", "group": 1, "name": "Dickson","color": "purple"},
   {"id": "13", "group": 1, "name": "Holleman","color": "pink"},
@@ -15,20 +18,6 @@ module.exports = [
   {"id": "114", "group": 1, "name": "Amden/Martin","color": "pink"},
   {"id": "115", "group": 1, "name": "Willingham","color": "black"},
   {"id": "116", "group": 1, "name": "Schirm/Meyer","color": "navy"},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {"id": "21", "group": 2, "name": "Pittman","color": "green"},
   {"id": "22", "group": 2, "name": "Frericks","color": "pink"},
   {"id": "23", "group": 2, "name": "Calderon","color": "navy"},
@@ -39,55 +28,6 @@ module.exports = [
   {"id": "28", "group": 2, "name": "Dickson","color": "grey"},
   {"id": "29", "group": 2, "name": "Fleming","color": "gold"},
   {"id": "210", "group": 2, "name": "Nichols","color": "red"},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {"id": "31",  "group": 3,"name": "King", "color": "red"},
   {"id": "32",  "group": 3,"name": "Gaylon", "color": "pink"},
   {"id": "33",  "group": 3,"name": "McGuire", "color": "royalblue"},
@@ -109,51 +49,6 @@ module.exports = [
   {"id": "319", "group": 3, "name": "Weaver", "color": "navy"},
   {"id": "320", "group": 3, "name": "Franke", "color": "red"},
   {"id": "321", "group": 3, "name": "McDaniel", "color": "black"},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {"id": "41", "group": 4, "name": "Johns","color": "skyblue"},
   {"id": "42", "group": 4, "name": "Ashworth","color": "teal"},
   {"id": "43", "group": 4, "name": "Wrubel","color": "red"},
@@ -177,4 +72,50 @@ module.exports = [
   {"id": "54", "group": 5, "name": "Thornton", "color": "purple"},
   {"id": "55", "group": 5, "name": "TJ Luchsen", "color": "grey"},
   {"id": "56", "group": 5, "name": "Reisner/Huseby", "color": "royalblue"}
-]
+];
+
+var CreateGames = React.createClass({
+  render: function() {
+    return (
+      <form className="createGamesForm">
+        <HomeTeamOptions/>
+        <input type="submit" value="Post" />
+      </form>
+    );
+  }
+});
+
+var HomeTeamOptions = React.createClass({
+  render: function() {
+    var teams = _.where(Teams, { 'group': 1 })
+    var teamNodes = teams.map(function(team, index) {
+      return (
+        <option value={team.id}>{team.name}</option>
+      );
+    });
+    return (
+      <label>Home Team</label>
+      <select id="home">
+        {teamNodes}
+      </select>
+    );
+  }
+});
+var AwayTeamOptions = React.createClass({
+  render: function() {
+    var teams = _.where(Teams, { 'group': 1 })
+    var teamNodes = teams.map(function(team, index) {
+      return (
+        <option value={team.id}>{team.name}</option>
+      );
+    });
+    return (
+      <label>Home Team</label>
+      <select id="away">
+        {teamNodes}
+      </select>
+    );
+  }
+});
+
+module.exports = CreateGames;
