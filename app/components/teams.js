@@ -15,20 +15,6 @@ module.exports = [
   {"id": "114", "group": 1, "name": "Amden/Martin","color": "pink"},
   {"id": "115", "group": 1, "name": "Willingham","color": "black"},
   {"id": "116", "group": 1, "name": "Schirm/Meyer","color": "navy"},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {"id": "21", "group": 2, "name": "Pittman","color": "green"},
   {"id": "22", "group": 2, "name": "Frericks","color": "pink"},
   {"id": "23", "group": 2, "name": "Calderon","color": "navy"},
@@ -39,59 +25,10 @@ module.exports = [
   {"id": "28", "group": 2, "name": "Dickson","color": "grey"},
   {"id": "29", "group": 2, "name": "Fleming","color": "gold"},
   {"id": "210", "group": 2, "name": "Nichols","color": "red"},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {"id": "31",  "group": 3,"name": "King", "color": "red"},
   {"id": "32",  "group": 3,"name": "Gaylon", "color": "pink"},
   {"id": "33",  "group": 3,"name": "McGuire", "color": "royalblue"},
-  {"id": "34",  "group": 3,"name": "Bridges", "color": "grey"},
+  {"id": "34",  "group": 3,"name": "Bridges", "color": "lightgrey"},
   {"id": "35",  "group": 3,"name": "Welborn", "color": "black"},
   {"id": "36",  "group": 3,"name": "Porter", "color": "pink"},
   {"id": "37",  "group": 3,"name": "Porter", "color": "white"},
@@ -109,51 +46,6 @@ module.exports = [
   {"id": "319", "group": 3, "name": "Weaver", "color": "navy"},
   {"id": "320", "group": 3, "name": "Franke", "color": "red"},
   {"id": "321", "group": 3, "name": "McDaniel", "color": "black"},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {"id": "41", "group": 4, "name": "Johns","color": "skyblue"},
   {"id": "42", "group": 4, "name": "Ashworth","color": "teal"},
   {"id": "43", "group": 4, "name": "Wrubel","color": "red"},
@@ -166,7 +58,7 @@ module.exports = [
   {"id": "410", "group": 4, "name": "Roark/Fitzwater","color": "gold"},
   {"id": "411", "group": 4, "name": "Burton","color": "pink"},
   {"id": "412", "group": 4, "name": "Baxter","color": "maroon"},
-  {"id": "413", "group": 4, "name": "Pery","color": "royalblue"},
+  {"id": "413", "group": 4, "name": "Perry","color": "royalblue"},
   {"id": "414", "group": 4, "name": "Wengraf","color": "maroon"},
   {"id": "415", "group": 4, "name": "Corby","color": "black"},
   {"id": "416", "group": 4, "name": "Watson","color": "gray"},

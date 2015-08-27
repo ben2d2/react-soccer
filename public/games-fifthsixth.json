@@ -1,0 +1,23 @@
+[
+  {"level": "fifthsixth", "date": "08/29/2015", "start_at": "1:45pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "53", "home": "54"},
+  {"level": "fifthsixth", "date": "08/29/2015", "start_at": "3:00pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "52", "home": "51"},
+  {"level": "fifthsixth", "date": "08/29/2015", "start_at": "4:15pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "55", "home": "56"},
+
+  {"level": "fifthsixth", "date": "09/12/2015", "start_at": "1:45pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "54", "home": "52"},
+  {"level": "fifthsixth", "date": "09/12/2015", "start_at": "3:00pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "51", "home": "53"},
+
+  {"level": "fifthsixth", "date": "09/19/2015", "start_at": "1:45pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "54", "home": "51"},
+  {"level": "fifthsixth", "date": "09/19/2015", "start_at": "3:00pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "52", "home": "53"},
+
+  {"level": "fifthsixth", "date": "09/26/2015", "start_at": "1:45pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "51", "home": "52"},
+  {"level": "fifthsixth", "date": "09/26/2015", "start_at": "3:00pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "54", "home": "53"},
+
+  {"level": "fifthsixth", "date": "10/03/2015", "start_at": "1:45pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "52", "home": "54"},
+  {"level": "fifthsixth", "date": "10/03/2015", "start_at": "3:00pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "53", "home": "51"},
+
+  {"level": "fifthsixth", "date": "10/10/2015", "start_at": "1:45pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "51", "home": "54"},
+  {"level": "fifthsixth", "date": "10/10/2015", "start_at": "3:00pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "53", "home": "52"},
+
+  {"level": "fifthsixth", "date": "10/17/2015", "start_at": "1:45pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "52", "home": "51"},
+  {"level": "fifthsixth", "date": "10/17/2015", "start_at": "3:00pm", "played_at": "#8 5th and 6th Grade Field - Upper Complex", "away": "53", "home": "54"}
+]

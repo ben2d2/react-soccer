@@ -71,7 +71,7 @@
 	  displayName: 'App',
 	
 	  render: function render() {
-	    return React.createElement(Schedule, { url: 'games-firstsecond.json', pollInterval: 2000 });
+	    return React.createElement(Schedule, { url: 'games.json', pollInterval: 2000 });
 	  }
 	
 	});

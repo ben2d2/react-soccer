@@ -1,0 +1,76 @@
+[
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "8:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "48", "home": "47"},
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "9:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "414", "home": "416"},
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "10:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "41", "home": "42"},
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "11:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "417", "home": "416"},
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "12:30pm", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "49", "home": "44"},
+
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "8:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "413", "home": "415"},
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "9:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "412", "home": "43"},
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "10:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "411", "home": "45"},
+  {"level": "thirdfourth", "date": "08/29/2015", "start_at": "11:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "410", "home": "46"},
+
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "8:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "417", "home": "415"},
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "9:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "45", "home": "410"},
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "10:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "417", "home": "414"},
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "11:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "45", "home": "44"},
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "12:30pm", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "412", "home": "47"},
+
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "8:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "41", "home": "46"},
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "9:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "43", "home": "48"},
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "10:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "413", "home": "416"},
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "11:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "42", "home": "410"},
+  {"level": "thirdfourth", "date": "09/12/2015", "start_at": "12:30pm", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "411", "home": "49"},
+
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "8:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "415", "home": "416"},
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "9:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "45", "home": "48"},
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "10:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "413", "home": "417"},
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "11:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "43", "home": "47"},
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "12:30pm", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "413", "home": "414"},
+
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "8:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "42", "home": "46"},
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "9:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "41", "home": "410"},
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "10:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "42", "home": "44"},
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "11:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "412", "home": "49"},
+  {"level": "thirdfourth", "date": "09/19/2015", "start_at": "12:30pm", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "411", "home": "44"},
+
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "8:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "415", "home": "414"},
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "9:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "46", "home": "411"},
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "10:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "415", "home": "417"},
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "11:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "49", "home": "43"},
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "12:30pm", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "41", "home": "44"},
+
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "8:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "416", "home": "413"},
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "9:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "412", "home": "410"},
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "10:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "42", "home": "48"},
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "11:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "411", "home": "410"},
+  {"level": "thirdfourth", "date": "09/26/2015", "start_at": "12:30pm", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "47", "home": "45"},
+
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "8:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "411", "home": "47"},
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "9:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "41", "home": "45"},
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "10:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "414", "home": "417"},
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "11:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "46", "home": "45"},
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "12:30pm", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "41", "home": "44"},
+
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "8:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "415", "home": "413"},
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "9:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "43", "home": "46"},
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "10:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "412", "home": "44"},
+  {"level": "thirdfourth", "date": "10/03/2015", "start_at": "11:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "49", "home": "48"},
+
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "8:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "46", "home": "47"},
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "9:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "411", "home": "42"},
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "10:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "49", "home": "41"},
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "11:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "414", "home": "413"},
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "12:30pm", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "49", "home": "42"},
+
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "8:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "416", "home": "415"},
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "9:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "412", "home": "48"},
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "10:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "417", "home": "415"},
+  {"level": "thirdfourth", "date": "10/10/2015", "start_at": "11:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "44", "home": "43"},
+
+  {"level": "thirdfourth", "date": "10/17/2015", "start_at": "8:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "412", "home": "411"},
+  {"level": "thirdfourth", "date": "10/17/2015", "start_at": "9:30am", "played_at": "#6 3rd and 4th Grade Field - Middle of complex", "away": "47", "home": "410"},
+
+  {"level": "thirdfourth", "date": "10/17/2015", "start_at": "8:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "42", "home": "43"},
+  {"level": "thirdfourth", "date": "10/17/2015", "start_at": "9:30am", "played_at": "#7 3rd and 4th Grade Field - Furthest from road", "away": "41", "home": "48"}
+]
