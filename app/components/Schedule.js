@@ -3,7 +3,24 @@ var _          = require('lodash');
 
 var LevelsList = require('./Levels');
 
+function filteredData(data, teamId) {
+  var filtered = _.uniq(
+    ([]).concat(
+      _.where(data, { "away": teamId }),
+      _.where(data, { "home": teamId })
+    )
+  );
+  return filtered;
+};
+
 function groupedData(data) {
+  if (window.location.search.match(/id=([^&]*)/)[1]) {
+    var teamId = window.location.search.match(/id=([^&]*)/)[1];
+    var data = filteredData(data, teamId)
+  } else {
+    var data = data;
+  }
+
   var grouped = _.map(_.groupBy(data, "level"), function(levelsArray, levelsKey){
     var groupedByDate = _.map(_.groupBy(levelsArray, "date"), function(datesArray, datesKey){
       var groupedByField = _.map(_.groupBy(datesArray, "played_at"), function(fieldsArray, fieldsKey){
