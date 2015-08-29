@@ -15,7 +15,7 @@ var App = React.createClass({
       return (
         <div>
           <a className="return-to-all" href="/">Return to all</a>
-          <h1 className="team-name"><span className="team-color" style={{backgroundColor: team.color}}></span>{team.name}</h1>
+          <h2 className="team-name"><span className="team-color" style={{backgroundColor: team.color}}></span>{team.name}</h2>
           <Schedule url='games.json' teamId={id ? id[1] : ""}  teamGroup={group ? group[1] : ""} pollInterval={2000}/>
         </div>
       );
