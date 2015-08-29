@@ -4,18 +4,14 @@ var _          = require('lodash');
 var LevelsList = require('./Levels');
 
 function filteredData(data, teamId) {
-  var filtered = _.uniq(
-    ([]).concat(
-      _.where(data, { "away": teamId }),
-      _.where(data, { "home": teamId })
-    )
+  var filtered = _.where(data, { "away": teamId }).concat(
+    _.where(data, { "home": teamId })
   );
   return filtered;
 };
 
-function groupedData(data) {
-  if (window.location.search.match(/id=([^&]*)/)[1]) {
-    var teamId = window.location.search.match(/id=([^&]*)/)[1];
+function groupedData(data, teamId) {
+  if (teamId) {
     var data = filteredData(data, teamId)
   } else {
     var data = data;
@@ -39,7 +35,7 @@ var Schedule = React.createClass({
       url: this.props.url,
       dataType: 'json',
       success: function(data) {
-        this.setState({data: groupedData(data)});
+        this.setState({data: groupedData(data, this.props.teamId)});
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -47,7 +43,7 @@ var Schedule = React.createClass({
     });
   },
   getInitialState: function() {
-    return {data: []};
+    return {data: [], teamId: this.props.teamId};
   },
   componentDidMount: function() {
     this.loadScheduleFromServer();
@@ -56,7 +52,7 @@ var Schedule = React.createClass({
   render: function() {
     return (
       <div className="games">
-        <LevelsList levels={this.state.data} />
+        <LevelsList levels={this.state.data} group={this.props.teamGroup} />
       </div>
     );
   }

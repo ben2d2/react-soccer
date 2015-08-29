@@ -6,8 +6,8 @@ var Games = React.createClass({
   render: function() {
     var awayTeam = _.findWhere(teams, {id: this.props.game.away});
     var homeTeam = _.findWhere(teams, {id: this.props.game.home});
-    var awayTeamLink = "?id="+ awayTeam.id
-    var homeTeamLink = "?id="+homeTeam.id
+    var awayTeamLink = "?id="+awayTeam.id+"&group="+awayTeam.group;
+    var homeTeamLink = "?id="+homeTeam.id+"&group="+homeTeam.group;
     return (
       <div className="gameRow row">
         <div className="col-lg-2 time">{this.props.game.start_at}</div>

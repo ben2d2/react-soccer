@@ -78,3 +78,16 @@ header img {
 .time {
   color: #337AB7;
 }
+.return-to-all {
+  display: block;
+  margin-top: 20px;
+}
+.team-name {
+  margin-top: 20px;
+  margin-bottom: 10px
+}
+
+.team-name .team-color {
+  width: 30px;
+  height: 30px;
+}

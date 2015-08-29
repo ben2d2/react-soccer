@@ -1,12 +1,32 @@
 var React = require('react');
 
+var NavTabs = require('./NavTabs');
 var Schedule = require('./Schedule');
+var teams   = require('./teams');
+
+var id = window.location.search.match(/id=([^&]*)/);
+var group = window.location.search.match(/group=([^&]*)/);
+
 
 var App = React.createClass({
   render: function() {
-    return (
-      <Schedule url='games.json' pollInterval={2000}/>
-    );
+    if (id) {
+      var team = _.findWhere(teams, {id: id[1]});
+      return (
+        <div>
+          <a className="return-to-all" href="/">Return to all</a>
+          <h1 className="team-name"><span className="team-color" style={{backgroundColor: team.color}}></span>{team.name}</h1>
+          <Schedule url='games.json' teamId={id ? id[1] : ""}  teamGroup={group ? group[1] : ""} pollInterval={2000}/>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <NavTabs/>
+          <Schedule url='games.json' teamId={id ? id[1] : ""}/>
+        </div>
+      );
+    }
   }
 });
 

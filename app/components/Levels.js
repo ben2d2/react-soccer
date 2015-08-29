@@ -14,8 +14,9 @@ var Levels = React.createClass({
 
 var LevelsList = React.createClass({
   render: function() {
+    var group = this.props.group;
     var levelNodes = this.props.levels.map(function(level, index) {
-      var klass = level.level == "threefour" ? "tab-pane active" : "tab-pane";
+      var klass = (level.level == "threefour" || level.level == group) ? "tab-pane active" : "tab-pane";
       return (
         <div id={level.level} role="tabpanel" className={klass}>
           <Levels level={level} key={index}/>
