@@ -1,7 +1,7 @@
 body {
   background: #fff;
   font-family: 'Titillium Web', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.7;
   margin: 0;
   color: #2B3840;
@@ -33,9 +33,9 @@ header img {
 .team-color {
   display: inline-block;
   float: left;
-  height: 17px;
-  width: 17px;
-  margin-top: 5px;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
   margin-right: 10px;
   background-color: #f1f1f1;
   border: solid 1px #ddd;
@@ -54,7 +54,7 @@ header img {
 }
 
 .field-description {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .dateRow {
