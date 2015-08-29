@@ -15,10 +15,27 @@ var Dates = React.createClass({
 
 var DatesList = React.createClass({
   render: function() {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if(dd<10) {
+        dd='0'+dd
+    }
+
+    if(mm<10) {
+        mm='0'+mm
+    }
+
+    var todayFoo = mm+'/'+dd+'/'+yyyy;
+
     var dateNodes = this.props.dates.map(function(date, index) {
-      return (
-        <Dates date={date} key={index}/>
-      );
+      if ( date.date >= todayFoo) {
+        return (
+          <Dates date={date} key={index}/>
+        );
+      }
     });
     return (
       <div className="dateList">
