@@ -7,7 +7,7 @@ function filteredData(data, teamId) {
   var filtered = _.where(data, { "away": teamId }).concat(
     _.where(data, { "home": teamId })
   );
-  return filtered;
+  return _.sortByOrder(filtered, ['date'], ['asc']);
 };
 
 function groupedData(data, teamId) {
