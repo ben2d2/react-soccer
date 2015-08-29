@@ -32,7 +32,7 @@ module.exports = [
   {"id": "35",  "group": 3,"name": "Welborn", "color": "black"},
   {"id": "36",  "group": 3,"name": "Porter", "color": "pink"},
   {"id": "37",  "group": 3,"name": "Porter", "color": "white"},
-  {"id": "38",  "group": 3,"name": "Theobald/Little", "color": "linen"},
+  {"id": "38",  "group": 3,"name": "Theobald/Little", "color": "maroon"},
   {"id": "39",  "group": 3,"name": "Cowles", "color": "teal"},
   {"id": "310", "group": 3, "name": "Holstein", "color": "orange"},
   {"id": "311", "group": 3, "name": "Cherry", "color": "white"},
