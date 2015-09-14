@@ -1,5 +1,6 @@
 var React      = require('react');
 var _          = require('lodash');
+var data       = require('./games_list');
 
 var LevelsList = require('./Levels');
 
@@ -30,29 +31,10 @@ function groupedData(data, teamId) {
 };
 
 var Schedule = React.createClass({
-  loadScheduleFromServer: function() {
-    $.ajax({
-      url: this.props.url,
-      dataType: 'json',
-      success: function(data) {
-        this.setState({data: groupedData(data, this.props.teamId)});
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-  },
-  getInitialState: function() {
-    return {data: [], teamId: this.props.teamId};
-  },
-  componentDidMount: function() {
-    this.loadScheduleFromServer();
-    setInterval(this.loadScheduleFromServer, this.props.pollInterval);
-  },
   render: function() {
     return (
       <div className="games">
-        <LevelsList levels={this.state.data} group={this.props.teamGroup} />
+        <LevelsList levels={groupedData(data, this.props.teamId)} group={this.props.teamGroup} />
       </div>
     );
   }
